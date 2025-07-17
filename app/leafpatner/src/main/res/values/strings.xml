@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LeafPatner</string>
+    <string-array name="category_array">
+        <item>Indoor</item>
+        <item>Outdoor</item>
+    </string-array>
+</resources>

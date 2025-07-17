@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000" /> <!-- semi-transparent black for shadow -->
+            <corners android:radius="12dp" />
+            <padding
+                android:left="4dp"
+                android:top="4dp"
+                android:right="0dp"
+                android:bottom="0dp" />
+        </shape>
+    </item>
+
+    <!-- Main card layer -->
+    <item android:top="0dp" android:left="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/admin_primary_dark"
+                android:endColor="@color/admin_primary"
+                android:angle="270" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+</layer-list>

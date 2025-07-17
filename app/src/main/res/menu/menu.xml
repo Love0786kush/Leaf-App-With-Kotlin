@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/outline_home_app_logo_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/outline_explore_24"
+        android:title="Explore" />
+
+    <item
+        android:id="@+id/nav_wishlist"
+        android:icon="@drawable/outline_favorite_24"
+        android:title="Wishlist" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/outline_garden_cart_24"
+        android:title="Cart" />
+
+</menu>

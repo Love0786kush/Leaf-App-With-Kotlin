@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:backgroundTint="#171717"
+    android:elevation="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <!-- Image Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_card"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            android:elevation="@dimen/_10sdp"
+            android:backgroundTint="@color/black">
+
+            <ImageView
+                android:id="@+id/image_"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img"
+                android:contentDescription="Plant image"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/plant_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monstera Deliciosa"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            android:layout_toEndOf="@id/image_card"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_alignTop="@id/image_card"/>
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monstera Deliciosa"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:background="@null"
+            android:layout_toEndOf="@id/image_card"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_alignTop="@id/image_card"
+            android:visibility="gone" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/plant_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indoor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_below="@id/plant_title"
+            android:layout_alignStart="@id/plant_title"
+            android:layout_marginTop="@dimen/_4sdp" />
+
+        <EditText
+            android:id="@+id/edit_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indoor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:background="@null"
+            android:layout_below="@id/edit_title"
+            android:layout_alignStart="@id/edit_title"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:visibility="gone" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/plant_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$25.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:layout_below="@id/plant_category"
+            android:layout_alignStart="@id/plant_category"
+            android:layout_marginTop="@dimen/_4sdp" />
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/edit_category"
+            android:layout_alignStart="@id/edit_category"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:visibility="gone" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:background="@drawable/outline_button"
+                android:drawableLeft="@drawable/baseline_edit_24"
+                android:drawablePadding="@dimen/_6sdp"
+                android:drawableTint="@color/white"
+                android:paddingVertical="@dimen/_6sdp"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/_8sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_delete"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:background="@drawable/outline_button"
+                android:drawableLeft="@drawable/baseline_delete_24"
+                android:drawablePadding="@dimen/_6sdp"
+                android:drawableTint="@color/white"
+                android:paddingVertical="@dimen/_6sdp"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_8sdp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

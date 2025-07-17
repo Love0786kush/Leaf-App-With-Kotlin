@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="admin_primary1">#2E7D32</color> <!-- example green -->
+
+
+    <!-- Admin module colors -->
+    <color name="admin_primary">#343131</color>
+    <color name="admin_primary_dark">#1D1616</color>
+    <color name="admin_accent">#FFC107</color>
+    <color name="admin_background">#131010</color>
+    <color name="admin_text">#fff</color>
+</resources>

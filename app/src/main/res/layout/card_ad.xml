@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_170sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:layout_margin="@dimen/_6sdp"
+    app:cardElevation="4dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+
+        <!-- Dark Overlay Layer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!! Limited Today !!"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/outline"
+            android:layout_margin="@dimen/_10ssp"
+            android:padding="@dimen/_10sdp"
+            />
+
+        <!-- Texts Container -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_60sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Special Offer"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/_4sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up To"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@android:color/white"
+                android:paddingBottom="@dimen/_4sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:textSize="@dimen/_25sdp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_30sdp"/>
+        </LinearLayout>
+
+        <!-- Button Bottom-Right -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claim"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:elevation="20dp"/>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>
